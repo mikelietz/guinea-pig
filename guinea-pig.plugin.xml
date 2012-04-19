@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<pluggable type="theme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///d:/Owen/Documents/PluggableSchema.xsd">
+	<name>Guinea Pig</name>
+	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
+
+	<!-- one or more authors -->
+	<author url="http://mikelietz.org">Mike Lietz</author>
+	<author url="http://sagrising.cockrumpublishing.com/">Rick Cockrum</author>
+
+	<copyright>2012</copyright>
+	<version>1.0</version>
+	<url>http://github.com/mikelietz</url>
+
+	<description><![CDATA[This is the description for the guinea pig plugin.]]></description>
+	<description xml:lang="es-es"><![CDATA[Esta es la descripción de la cobayo plugin.]]></description>
+	<description xml:lang="sv"><![CDATA[Bork bork bork de piggy guinea bork bork bork.]]></description>
+
+	<!-- describe features that this pluggable requires -->
+	<requires>
+		<feature url="http://foo">podcast</feature>
+	</requires>
+
+	<!-- describe features that this pluggable will make special use of, but are optional -->
+	<recommends>
+		<feature>tag cloud</feature>
+	</recommends>
+
+	<!-- describe features that this pluggable exposes itself -->
+	<provides>
+		<feature>more</feature>
+		<feature>less</feature>
+	</provides>
+
+	<!-- describe features that this pluggable does not work with -->
+	<conflicts>
+		<feature>more</feature>
+	</conflicts>
+
+	<!-- provide some 0-code configuration XML -->
+	<config name="configure" load="1">
+		<caption>
+			<value>Configure</value>
+			<value xml:lang="es-es">Configurar</value>
+		</caption>
+		<container type="fieldset">
+			<attribute name="caption">
+				<value>My fieldset</value>
+				<value xml:lang="es-es">Mi fieldset</value>
+			</attribute>
+			<control type="text" name="textbox1" storage="option:textbox1">
+				<attribute name="caption">
+					<value>My fieldset</value>
+					<value xml:lang="es-es">Mi fieldset</value>
+				</attribute>
+				<attribute name="default">
+					<value>Four</value>
+					<value xml:lang="es-es">Quatro</value>
+				</attribute>
+
+				<validator type="required"/>
+			</control>
+		</container>
+		<control type="textarea" name="textarea1" storage="option:textarea1">
+			<attribute name="caption">
+				<value>My textarea</value>
+				<value xml:lang="es-es">Mi textarea</value>
+			</attribute>
+
+			<attribute name="default">
+				<value><![CDATA[
+				This is the default value of the textarea.
+				It has more than one line.
+				]]></value>
+				<value xml:lang="es-es"><![CDATA[
+				Este es el valor por defecto de los de texto.
+				Cuenta con más de una línea.
+				]]></value>
+			</attribute>
+		</control>
+		<control type="select" name="select1">
+			<attribute name="caption">
+				<value>My select</value>
+				<value xml:lang="es-es">Mi select</value>
+			</attribute>
+			<attribute name="options">
+				<option value="1" default="1">
+					<value>Red</value>
+					<value xml:lang="es-es">Rojo</value>
+				</option>
+				<option value="2">
+					<value>Blue</value>
+					<value xml:lang="es-es">Azul</value>
+				</option>
+			</attribute>
+		</control>
+	</config>
+
+	<config name="block_config">
+		<control type="checkbox" name="check1" storage="option:check1">
+			<attribute name="caption">
+				<value>My checkbox</value>
+				<value xml:lang="es-es">Mi checkbox</value>
+			</attribute>
+		</control>
+	</config>
+
+	<!-- help can come from the info file -->
+	<help name="main">
+		<value><![CDATA[This is helpful stuff.]]></value>
+		<value xml:lang="es-es"><![CDATA[Esto es útil cosas.]]></value>
+	</help>
+	<help name="secondary">
+		<value><![CDATA[This is more helpful stuff.]]></value>
+		<value xml:lang="es-es"><![CDATA[Esto es más útil cosas.]]></value>
+	</help>
+
+
+	<!-- Choose the template engine used for rendering.  Specific to pluggable type="theme" -->
+	<template_engine>hiengine</template_engine>
+
+	<!-- List areas available to a theme -->
+	<areas>
+		<area name="sidebar">
+			<description>
+				This is the right-side sidebar area.
+			</description>
+		</area>
+		<area name="nav">
+			<description>
+				This is the top navigation bar area.
+			</description>
+			<description xml:lang="es-es">
+				Esta es la barra de navegación superior esfera.
+			</description>
+		</area>
+		<area name="footer">
+			<description>
+				This is the footer area.
+			</description>
+		</area>
+	</areas>
+
+	<!-- List presets available/provided -->
+	<presets>
+		<preset name="main">
+			<description>
+				This theme uses this preset to select the main post listing on the home page.
+			</description>
+			<description xml:lang="es-es">
+				Esta es la barra de navegación superior esfera.
+			</description>
+		</preset>
+		<preset name="nav">
+			<description>
+				This theme uses this preset to select posts for display as navigation items.
+			</description>
+		</preset>
+	</presets>
+
+	<!-- Add values to a stack -->
+	<stack name="template_stylesheet">
+		<add name="style" after="reset">
+			<value>https://raw.github.com/twitter/bootstrap/master/bootstrap-1.2.0.min.css</value>
+			<value>screen,projection</value>
+		</add>
+		<remove name="base" />
+		<add name="style" after="reset">
+			<value>https://raw.github.com/twitter/bootstrap/master/bootstrap-1.2.0.min.css</value>
+			<value>screen,projection</value>
+		</add>
+	</stack>
+	<stack name="template_header_javascript">
+		<add name="less" after="jquery" value="//cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" />
+	</stack>
+
+</pluggable>
