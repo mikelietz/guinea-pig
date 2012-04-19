@@ -107,8 +107,8 @@
 
 	<!-- help can come from the info file -->
 	<help>
-		<value><![CDATA[This is helpful stuff.]]></value>
 		<value xml:lang="es-es"><![CDATA[Esto es útil cosas.]]></value>
+		<value><![CDATA[This is helpful stuff.]]></value>
 	</help>
 	<help name="configure">
 		<value><![CDATA[This is helpful stuff for configuration.]]></value>
