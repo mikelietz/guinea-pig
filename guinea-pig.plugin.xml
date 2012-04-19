@@ -177,5 +177,4 @@
 	<stack name="template_header_javascript">
 		<add name="less" after="jquery" value="//cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" />
 	</stack>
-
 </pluggable>
