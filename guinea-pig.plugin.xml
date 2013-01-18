@@ -8,9 +8,10 @@
 	<author url="http://sagrising.cockrumpublishing.com/">Rick Cockrum</author>
 
 	<copyright>2012</copyright>
-	<version>0.9-2.0.6</version>
+	<version>0.9-2.0.8</version>
 	<url>http://github.com/mikelietz</url>
-	<guid>223eb62a-ac9b-41dc-80cc-95a06b95d8e0</guid>
+	<not-guid>223eb62a-ac9b-41dc-80cc-95a06b95d8e0</not-guid>
+	<guid>42</guid>
 
 	<description><![CDATA[This is the description for the guinea pig plugin.]]></description>
 	<description xml:lang="es-es"><![CDATA[Esta es la descripción de la cobayo plugin.]]></description>
