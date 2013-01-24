@@ -8,11 +8,11 @@
 	<author url="http://sagrising.cockrumpublishing.com/">Rick Cockrum</author>
 
 	<copyright>2012</copyright>
-	<version>2.0.12</version>
-	<url>http://github.com/mikelietz</url>
+	<version>2.0.13</version>
+	<url>http://github.com/mikelietz/guinea-pig/issues</url>
 	<guid>223eb62a-ac9b-41dc-80cc-95a06b95d8e0</guid>
 
-	<description><![CDATA[This is the description for the guinea pig plugin.]]></description>
+	<description><![CDATA[This is the UPDATED description for the guinea pig plugin.]]></description>
 	<description xml:lang="es-es"><![CDATA[Esta es la descripción de la cobayo plugin.]]></description>
 	<description xml:lang="sv"><![CDATA[Bork bork bork de piggy guinea bork bork bork.]]></description>
 
