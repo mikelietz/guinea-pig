@@ -19,7 +19,7 @@
 
 	<!-- describe features that this pluggable requires -->
 	<requires>
-		<feature url="http://foo">podcast</feature>
+		<feature url="http://bar/">podcast</feature>
 	</requires>
 
 	<!-- describe features that this pluggable will make special use of, but are optional -->
